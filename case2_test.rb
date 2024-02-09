@@ -7,11 +7,11 @@ class Case1Test < MiniTest::Test
   end
 
   def test_tf
-    assert_equal false, condition(true, false)
+    assert_equal true, condition(true, false)
   end
 
   def test_ft
-    assert_equal false, condition(false, true)
+    assert_equal true, condition(false, true)
   end
 
   def test_ff
